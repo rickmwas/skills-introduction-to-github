@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erick Mwangi's Portfolio</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header section */
+        header {
+            background-color: #333;
+            color: #ff0000;
+            padding: 10px 0;
+            text-align: center;
+            background-image: URL('/storage/emulated/0/new project html /maxresdefault (1).jpg');
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #0000ff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: #ff0000;
+        }
+
+        /* Profile picture & contact */
+        .profile-contact-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        #profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #333;
+        }
+
+        .contact-info {
+            margin-left: 20px;
+        }
+
+        .contact-info h2 {
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            margin-bottom: 5px;
+        }
+
+        /* About Me section */
+        #about {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px 0;
+        }
+
+        /* Projects section */
+        #projects {
+            padding: 20px;
+            background-color: #e9ecef;
+            margin: 20px 0;
+        }
+
+        .project-card {
+            background-color: #fff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Contact section */
+        #contact {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px 0;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        form input[type="submit"] {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        /* Media Queries */
+@media (max-width: 768px) {
+            .profile-contact-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contact-info {
+                margin: 20px 0 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1><marquee>Welcome to Erick Mwangi's Portfolio</marquee></marquee></h1>
+    <nav>
+        <ul>
+            <li><a href="#about"><strong>About Me</strong></a></li>
+            <li><a href="#projects"><strong>Projects</strong></a></li>
+            <li><a href="#contact"><strong>Contact</strong></a></li>
+            <li><a href="mailto: rickmwasswiz@gmail.com"><strong>Email Me</strong></a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Profile Picture and Contact Info -->
+<section class="profile-contact-section">
+    <!-- Profile Picture -->
+    <div>
+        <img id="profile-image" src="/storage/emulated/0/new project html /IMG_8810~2.jpg" alt="Profile Picture">
+    </div>
+
+    <!-- Contact Information -->
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>
+            <strong>Phone:</strong> +254-113242983
+        </p>
+        <p>
+            <strong>Email:</strong> rickmwasswiz@gmail.com
+        </p>
+        <p>
+            <strong>Location:</strong> Kisii, Kenya
+        </p>
+        <p>
+            <strong>LinkedIn:</strong> <a href="#">linkedin.com/in/erickmwangi</a>
+        </p>
+        <p>
+            <strong>GitHub:</strong> <a href=>https://github.com/rickmwas
+                
+                 </a>
+        </p>
+    </div>
+</section>
+
+<!-- About Me section -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Hi, I'm Erick Mwangi, a Software Engineering student passionate about web development and coding. I am proficient in HTML, CSS, JavaScript, and working towards mastering full-stack development.
+    </p>
+</section>
+
+<!-- Projects section -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+        <h3>Project 1: Personal Portfolio Website</h3>
+        <p>
+            A portfolio website built using HTML, CSS, and JavaScript to showcase my skills and projects.
+        </p>
+    </div>
+
+    <div class="project-card">
+        <h3>Project 2: E-commerce Website</h3>
+        <p>
+            An e-commerce website with product listings, shopping cart functionality, various user choices and user authentication.
+        </p>
+    </div>
+</section>
+
+<!-- Contact section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/xbljrokg" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <br>
+        <input type="submit" value="Send">
+    </form>
+</section>
+
+<!-- JavaScript -->
+<script>
+    const form = document.querySelector('form');
+    form.addEventListener('submit', async function(event) {
+        event.preventDefault(); // Prevent form from submitting the default way
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // Simple front-end validation
+        if (!name || !email || !message) {
+            alert("Please fill in all fields before submitting.");
+            return;
+        }
+
+        const formData = new FormData(form);
+
+        // Send the form data using fetch
+        const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+        mailto; rickmwasswiz@gmail.com
+
+        if (response.ok) {
+            alert("Thank you! Your message has been sent to us.");
+            form.reset(); // Reset form fields after successful submission
+        } else {
+            alert("Oops! There was a problem submitting your form.");
+        }
+    });
+</script>
+
+</body>
+</html>
